@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="168" viewBox="0 0 280 168" fill="none">
+  <!-- 与 version-b plan2：#eceff4 + 低对比网格 + 顶栏 + 居中白卡片 -->
+  <rect width="280" height="168" rx="10" fill="#eceff4"/>
+  <g opacity="0.35">
+    <defs>
+      <pattern id="g" width="14" height="14" patternUnits="userSpaceOnUse">
+        <path d="M14 0H0V14" stroke="#94a3b8" stroke-width="0.35"/>
+      </pattern>
+    </defs>
+    <rect x="10" y="10" width="260" height="148" rx="8" fill="url(#g)"/>
+  </g>
+  <rect x="12" y="14" width="256" height="14" rx="3" fill="rgba(255,255,255,0.88)" stroke="rgba(15,23,42,0.06)"/>
+  <rect x="18" y="18" width="36" height="6" rx="2" fill="#cbd5e1"/>
+  <rect x="98" y="52" width="84" height="72" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="110" y="66" width="60" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="110" y="84" width="60" height="20" rx="5" fill="#2563eb"/>
+</svg>

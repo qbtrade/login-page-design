@@ -110,24 +110,17 @@
         color: #94a3b8;
         border-radius: 1px;
       }
-      .lang-btn.lang-btn--demo-icon {
-        position: relative;
-        padding-left: 26px;
-      }
       .lang-btn.lang-btn--demo-icon::before {
         content: '';
-        position: absolute;
-        left: 6px;
-        top: 50%;
-        width: 12px;
-        height: 12px;
-        transform: translateY(-50%);
+        flex-shrink: 0;
+        width: 14px;
+        height: 14px;
         border: 1.5px solid currentColor;
         border-radius: 50%;
-        opacity: 0.75;
-        box-shadow:
-          inset 0 0 0 1px rgba(255, 255, 255, 0.35),
-          -4px 0 0 -3px currentColor;
+        opacity: 0.82;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+        background:
+          linear-gradient(currentColor, currentColor) center / 1.5px 58% no-repeat;
       }
       .brand-logo-text {
         font-size: 18px;
@@ -336,6 +329,10 @@
       .form-topbar .lang-btn:hover {
         color: #1677ff;
         border-color: #93c5fd;
+      }
+      .form-topbar .lang-btn.lang-btn--demo-icon {
+        padding: 5px 10px;
+        gap: 8px;
       }
 
       .scene {

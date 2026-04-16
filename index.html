@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAM 登录页 Demo 入口</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #0a1628;
+      color: #e2e8f0;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hub {
+      width: 100%;
+      max-width: 720px;
+    }
+    .hub__head {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .hub__head h1 {
+      font-size: clamp(1.35rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -0.02em;
+    }
+    .hub__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .hub__link {
+      display: flex;
+      align-items: stretch;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      background: rgba(15, 23, 42, 0.65);
+      transition: border-color 0.15s, background 0.15s, transform 0.15s;
+    }
+    .hub__link:hover {
+      border-color: rgba(59, 130, 246, 0.55);
+      background: rgba(30, 41, 59, 0.85);
+      transform: translateY(-1px);
+    }
+    .hub__link:focus-visible {
+      outline: 2px solid #3b82f6;
+      outline-offset: 2px;
+    }
+    .hub__thumb {
+      flex-shrink: 0;
+      width: 140px;
+      height: 84px;
+      object-fit: cover;
+      object-position: left top;
+      border-radius: 8px;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      background: #0f172a;
+      align-self: center;
+    }
+    .hub__link-body {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4px 0;
+    }
+    .hub__link-title {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #f1f5f9;
+    }
+    @media (max-width: 520px) {
+      .hub__link {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .hub__thumb {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 5 / 3;
+        align-self: stretch;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hub">
+    <header class="hub__head">
+      <h1>CAM 登录页静态 Demo</h1>
+    </header>
+    <nav class="hub__list" aria-label="Demo 方案">
+      <a class="hub__link" href="demo/version-c.html">
+        <img class="hub__thumb" src="demo/thumbs/plan-c.png" width="280" height="168" alt="" loading="lazy" decoding="async">
+        <div class="hub__link-body">
+          <div class="hub__link-title">方案 1 · 侧栏品牌 + 白底表单</div>
+        </div>
+      </a>
+      <a class="hub__link" href="demo/version-a.html">
+        <img class="hub__thumb" src="demo/thumbs/plan-a.svg" width="280" height="168" alt="" loading="lazy" decoding="async">
+        <div class="hub__link-body">
+          <div class="hub__link-title">方案 2 · Navy Split 左右分栏</div>
+        </div>
+      </a>
+      <a class="hub__link" href="demo/version-b.html">
+        <img class="hub__thumb" src="demo/thumbs/plan-b.svg" width="280" height="168" alt="" loading="lazy" decoding="async">
+        <div class="hub__link-body">
+          <div class="hub__link-title">方案 3 · 浅灰网格底 + 顶栏 + 居中卡片</div>
+        </div>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
